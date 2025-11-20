@@ -6,6 +6,7 @@ import TwoLineHeader from '../components/TwoLineHeader';
 import phoneImg from "../assets/img/place_holder_50_x_50.png";
 import tabletImg from "../assets/img/place_holder_150_x_150.png";
 import desktopImg from "../assets/img/place_holder_320_x_320.png";
+import MainBtn from '../components/MainBtn';
 
 const HowItWorks = () => {
   return (
@@ -43,24 +44,70 @@ const HowItWorks = () => {
 
       <div className=' container mx-auto px-2 md:px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ' >
         {
+          //  icon , header , paragraph 
           [
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
+            {
+              icon: "🔍",
+            },
+            {
+              icon: "💬",
+            },
+            {
+              icon: "👀",
+            },
+            {
+              icon: "📝",
+            },
+            {
+              icon: "🏫",
+            },
           ].map((x, i) => {
             // change key
             return (<div
               key={i}
               className=' flex items-center justify-center  '
             >
-              <FolderShaped />
+              <FolderShaped
+                borderColor={4}
+              >
+                <div className=' p-8 ' >
+                  <div className=' scale-200 w-fit h-fit ' >
+                    {x.icon}
+                  </div>
+                  <h1>
+                    header
+                  </h1>
+                  <p>
+                    dfsgdsfhg
+                  </p>
+
+                </div>
+              </FolderShaped>
             </div>
             );
           })
         }
+        <div
+          className=' flex items-center justify-center relative  '
+        >
+          <div
+            className='   flex justify-end   items-start  overflow-hidden  rounded-4xl  '
+          >
+            <img
+              className=' object-cover w-full '
+              src={desktopImg}
+              // this depends on the device dpr
+              srcSet={`${phoneImg} 50w, ${tabletImg} 15w, ${desktopImg} 320w`}
+            // width={500}
+            // height={500}
+            />
+          </div>
+          <div className=' w-full absolute ' >
+            <p className=' text-0 ' >Discover, apply, succeed - UVER app makes college search effortless.</p>
+            <MainBtn />
+          </div>
+
+        </div>
       </div>
     </div>
   )

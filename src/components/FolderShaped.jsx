@@ -1,14 +1,21 @@
 import React from 'react'
 
-const FolderShaped = ({ children }) => {
+const defaultColor = "4";
+const FolderShaped = ({ children, bgColor = null, borderColor = null }) => {
     return (
         <div
-            className="w-48 h-36 bg-cover bg-center rounded-md shadow text-2
-                "
-        // style="background-image: url('/assets/img/place_holder_1024_x_1024.png');"
+            className=" w-full  aspect-square flex flex-col "
         >
-            {children}
-            test
+            <div className={` w-1/3  bg-${borderColor ?? defaultColor} rounded-2xl aspect-square `}
+                style={{
+                    marginBottom: "-25%"
+                }}
+            ></div>
+            <div
+                className={` bg-cover bg-center rounded-4xl bg-${bgColor ?? (borderColor ?? defaultColor)}  w-full flex-1 ${borderColor ? ` border-${borderColor}    border-6 ` : ""}  `}
+            >
+                {children}
+            </div>
         </div>
     );
 }
