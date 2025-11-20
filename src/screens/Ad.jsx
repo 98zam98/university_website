@@ -8,13 +8,16 @@ import desktopImg from "../assets/img/place_holder_320_x_320.png";
 
 const Ad = () => {
   return (
-    <div className='h-screen bg-0'>
-      <AppearingText
-        isH2={true}
-        text={" ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs  "}
-      />
-      <div>
-        <div>
+    <div className=' overflow-hidden  w-screen  bg-0'>
+      <div className=' flex items-center justify-end py-9  ' >
+        <AppearingText
+          isH2={true}
+          text={" ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs  "}
+        />
+      </div>
+
+      <div className='container mx-auto px-2 md:px-4 grid grid-cols-1 md:grid-cols-3 gap-4 ' >
+        <div className='col-span-2 grid grid-cols-1 md:grid-cols-2' >
           {
             [
               {},
@@ -24,7 +27,8 @@ const Ad = () => {
             ].map((x, i) => {
               return (
                 <div
-                  className='  w-12 md:w-20 lg:w-32 '
+                  key={i}
+                  className='  w-full py-9    flex justify-center  '
                 >
                   <img
                     className=' object-cover '
@@ -41,7 +45,10 @@ const Ad = () => {
             })
           }
         </div>
-        <FolderShaped />
+
+        <div className=' py-9  flex justify-center  ' >
+          <FolderShaped />
+        </div>
       </div>
     </div>
   )

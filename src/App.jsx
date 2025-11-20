@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 // import AboutUs from "./screens/AboutUs";
 // import Ad from "./screens/Ad";
@@ -14,6 +14,7 @@ const Explore = lazy(() => import("./screens/Explore"));
 const HowItWorks = lazy(() => import("./screens/HowItWorks"));
 
 export default function App() {
+  const [posFlag, setPosFlag] = useState(false);
   return (
     <div className="w-screen h-screen relative overflow-hidden">
       <main className="absolute inset-y-0 left-0 right-[-17px] overflow-y-scroll">
@@ -44,7 +45,7 @@ export default function App() {
           </Suspense>
         </ErrorBoundary>
 
-        <PhoneMoving />
+        <PhoneMoving posFlag={posFlag} />
       </main>
     </div>
   )
