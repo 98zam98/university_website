@@ -8,11 +8,11 @@ import MainBtn from '../components/MainBtn';
 
 const AboutUs = () => {
   return (
-    <div className=' overflow-hidden h-screen w-screen bg-4'>
+    <div className=' overflow-hidden h-screen w-screen bg-1'>
       <div className='container mx-auto px-2 md:px-4 grid grid-cols-1 md:grid-cols-3 gap-4 ' >
       <div>
         <NameInTopLeft
-          text={"dfsgsedg"}
+          text={"About Us"}
         />
       </div>
       <div className='col-span-2 ' >

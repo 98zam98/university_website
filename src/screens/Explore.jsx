@@ -1,18 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NameArr from '../components/NameArr';
 import TwoLineHeader from '../components/TwoLineHeader';
 import AppearingText from '../components/AppearingText';
 
+const navArr = [
+  'College Search',
+  'Recommendations',
+  'Tracker',
+  'Chat',
+  'Application',
+];
 
-// <div className="grid grid-cols-2 md:grid-cols-3 gap-4"></div>
 const Explore = () => {
+  const [selectedIndex, setSelectedIndex] = useState(0);
   return (
     <div className=' overflow-hidden h-screen w-screen  bg-2  '>
       <div className=' container mx-auto px-2 md:px-4 grid grid-cols-5 gap-4 ' >
-        <div className='col-span-5 md:col-span-1'>
+        <div className='col-span-5 md:col-span-1  mt-4'>
           <NameArr
             isNav={true}
-            arr={[]}
+            arr={navArr}
+            selectedIndex={selectedIndex}
+            setSelectedIndex={setSelectedIndex}
+            textColor={0}
           />
         </div>
         {/* <div className=" block md:hidden "></div> */}

@@ -15,7 +15,7 @@ const HowItWorks = () => {
 
         <div className=' flex items-start justify-start  ' >
           <NameInTopLeft
-            text={"kdhgdfsgk"}
+            text={"How It Works"}
           />
         </div>
 

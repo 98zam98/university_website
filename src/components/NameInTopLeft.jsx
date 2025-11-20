@@ -1,7 +1,7 @@
 import React from 'react'
 import NameArr from './NameArr'
 
-const NameInTopLeft = (text) => {
+const NameInTopLeft = ({text=''}) => {
     return (
         <NameArr
             arr={[text]}
