@@ -60,7 +60,7 @@ const Ad = () => {
                 className='  w-full h-full    flex justify-center   items-center   '
               >
                 <img
-                  className=' object-cover  w-full  aspect-square flex flex-col rounded-4xl  '
+                  className=' object-cover  w-full h-full flex flex-col rounded-4xl  '
                   src={desktopImg2}
                   // this depends on the device dpr
                   srcSet={`${phoneImg2} 320w, ${tabletImg2} 768w, ${desktopImg2} 1024w`}

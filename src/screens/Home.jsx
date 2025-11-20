@@ -5,10 +5,11 @@ import MainBtn from '../components/MainBtn';
 import phoneImg from "../assets/img/place_holder_50_x_50.png";
 import tabletImg from "../assets/img/place_holder_150_x_150.png";
 import desktopImg from "../assets/img/place_holder_320_x_320.png";
+import PhoneMoving from '../components/PhoneMoving';
 
 const Home = () => {
   return (
-    <div className='overflow-hidden h-screen w-screen   bg-1' >
+    <div className='overflow-hidden h-screen w-screen   bg-1 relative' >
 
 
       <div className='container mx-auto px-2 md:px-4' >
@@ -46,6 +47,7 @@ const Home = () => {
 
 
 
+      <PhoneMoving posFlag={true} />
     </div>
   )
 }

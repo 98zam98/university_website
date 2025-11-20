@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import NameArr from '../components/NameArr';
 import TwoLineHeader from '../components/TwoLineHeader';
 import AppearingText from '../components/AppearingText';
+import PhoneMoving from '../components/PhoneMoving';
 
 const navArr = [
   'College Search',
@@ -11,12 +12,22 @@ const navArr = [
   'Application',
 ];
 
+// TwoLineHeader ->line1
+// TwoLineHeader ->line2
+// AppearingText
+const arr = [
+  ['Comprehensive', 'College Search', 'Effortlessly explore a vast database of colleges and universities worldwide. Filter results based on your preferences, including locations, majors, campus facilities, and more. find the perfect fit for your educational journey.'],
+  ['Personalized', 'Advising', 'Stay organized with an intuitive application tracker. Monitor the progress of your applications, track deadlines, and receive reminders to submit required documents. Never miss an important milestone on your path to higher education.'],
+  ['Engaging', 'Experts Chat', 'Receive tailored recommendations based on your interests, academic achievements, and career aspirations. Discover colleges and programs that align with your goals, ensuring you make informed decisions about your future.'],
+  ['Application', 'Tracker', 'Feel free to inquire, seek counsel, and acquire valuable perspectives to assist you in making well-informed choices regarding your college applications. Receive tailored guidance and assistance every step of the way.'],
+  ['Seamless', 'Application', 'Submit applications directly through the app. Save time by completing and submitting forms electronically. Enjoy a hassle-free application process with streamlined document uploads and easy communication with admissions offices.'],
+];
 const Explore = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
-    <div className=' overflow-hidden h-screen w-screen  bg-2  '>
-      <div className=' container mx-auto px-2 md:px-4 grid grid-cols-5 gap-4 ' >
-        <div className='col-span-5 md:col-span-1  mt-4'>
+    <div className=' overflow-hidden  min-h-screen w-screen  bg-2 pt-52  relative '>
+      <div className=' container mx-auto px-2 lg:px-4 grid grid-cols-6 gap-4 ' >
+        <div className='col-span-5 lg:col-span-1  mt-4'>
           <NameArr
             isNav={true}
             arr={navArr}
@@ -25,18 +36,18 @@ const Explore = () => {
             textColor={0}
           />
         </div>
-        {/* <div className=" block md:hidden "></div> */}
-        <article className='col-span-5 md:col-span-3' >
+        <article className='col-span-6  lg:col-span-3 text-0 pb-48 ' >
           <TwoLineHeader
-            line1={"asdasd"}
-            line2={"asdasd"}
+            line1={arr[selectedIndex][0]}
+            line2={arr[selectedIndex][1]}
           />
           <AppearingText
-            text={" ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs ldfnhgdfhgkhdfhs  "}
+            indent={10}
+            text={arr[selectedIndex][2]}
           />
         </article>
-        {/* <div className=" hidden md:block "></div> */}
       </div>
+      <PhoneMoving posFlag={false} />
     </div>
   )
 }
