@@ -11,7 +11,7 @@ import MainBtn from '../components/MainBtn';
 const HowItWorks = () => {
   return (
     <div className=' py-9  w-screen  bg-1'>
-      <div className='  container mx-auto px-2 md:px-4 grid grid-cols-3 gap-4  pb-9 ' >
+      <div className='  container mx-auto px-2 md:px-4 grid grid-cols-2 md:grid-cols-3 gap-4  pb-9 ' >
 
         <div className=' flex items-start justify-start  ' >
           <NameInTopLeft
@@ -19,7 +19,7 @@ const HowItWorks = () => {
           />
         </div>
 
-        <div className=' flex items-center justify-center  ' >
+        <div className=' md:flex items-center justify-center hidden  ' >
           <TwoLineHeader
             line1={"asdasd"}
             line2={"asdasd"}
@@ -29,17 +29,18 @@ const HowItWorks = () => {
         <div
           className='  w-full flex justify-end   items-start  '
         >
-          <img
-            className=' object-cover '
-            src={desktopImg}
-            // this depends on the device dpr
-            srcSet={`${phoneImg} 50w, ${tabletImg} 15w, ${desktopImg} 320w`}
-            alt="graduate"
-            width={100}
-            height={100}
-          />
+          <div className=' scale-200 w-fit h-fit ' >
+            🎓
+          </div>
         </div>
 
+      </div>
+
+      <div className=' md:hidden items-center justify-center flex  ' >
+        <TwoLineHeader
+          line1={"asdasd"}
+          line2={"asdasd"}
+        />
       </div>
 
       <div className=' container mx-auto px-2 md:px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ' >
@@ -98,13 +99,16 @@ const HowItWorks = () => {
               src={desktopImg}
               // this depends on the device dpr
               srcSet={`${phoneImg} 50w, ${tabletImg} 15w, ${desktopImg} 320w`}
-            // width={500}
-            // height={500}
+              loading='lazy'
+              width={500}
+              height={500}
             />
           </div>
           <div className=' w-full absolute ' >
             <p className=' text-0 ' >Discover, apply, succeed - UVER app makes college search effortless.</p>
-            <MainBtn />
+            <MainBtn
+              text={"Get Early Access 📱"}
+            />
           </div>
 
         </div>

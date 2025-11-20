@@ -26,7 +26,7 @@ const Explore = () => {
           />
         </div>
         {/* <div className=" block md:hidden "></div> */}
-        <article className='col-span-3' >
+        <article className='col-span-5 md:col-span-3' >
           <TwoLineHeader
             line1={"asdasd"}
             line2={"asdasd"}

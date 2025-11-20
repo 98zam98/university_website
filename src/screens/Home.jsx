@@ -20,7 +20,9 @@ const Home = () => {
           >
             UVER
           </div>
-          <MainBtn />
+          <MainBtn
+            text={"Get Early Access 📱"}
+          />
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
