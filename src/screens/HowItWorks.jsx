@@ -101,10 +101,10 @@ const HowItWorks = () => {
           })
         }
         <div
-          className=' flex items-center justify-center relative  '
+          className=' flex items-center justify-center relative rounded-4xl overflow-clip '
         >
           <div
-            className='   flex justify-end   items-start  overflow-hidden  rounded-4xl  '
+            className='   flex justify-end   items-start  overflow-hidden    '
           >
             <img
               className=' object-cover w-full '
@@ -116,8 +116,8 @@ const HowItWorks = () => {
               height={500}
             />
           </div>
-          <div className=' w-full absolute ' >
-            <p className=' text-0 ' >Discover, apply, succeed - UVER app makes college search effortless.</p>
+          <div className=' w-full absolute px-8 h-full bg-3/30 flex  justify-center items-start flex-col ' >
+            <p className=' text-0 text-3xl md:text-5xl py-15 md:py-20 ' >Discover, apply, succeed - UVER app makes college search effortless.</p>
             <MainBtn
               text={"Get Early Access 📱"}
             />
