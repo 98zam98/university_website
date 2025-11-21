@@ -27,7 +27,7 @@ const Home = () => {
 
         <div className=' w-full flex justify-between items-center md:mt-5  ' >
           <div
-            className='  w-12 md:w-20 lg:w-32 '
+            className='  w-12 md:w-20 lg:w-32 text-3xl md:text-4xl '
           >
             UVER
           </div>
