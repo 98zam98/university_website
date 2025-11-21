@@ -80,11 +80,13 @@ const Ad = () => {
                   />
 
                 </div>
-                <div className=' flex justify-between flex-col h-full p-4 absolute ' >
+                <div className=' flex justify-between flex-col h-full p-4 absolute ml-5 ' >
                   <div className='  scale-200 w-fit h-fit p-6 ' >👩‍🎓</div>
                   <div>
-                    <div>Get ready to experience the future of college applications with UVER</div>
-                    <ArrowBtn />
+                    <div className=' text-0 text-4xl  md:text-6xl  ' >Get ready to experience the future of college applications with UVER</div>
+                    <div className=' my-7' >
+                      <ArrowBtn />
+                    </div>
                   </div>
                 </div>
               </div>
