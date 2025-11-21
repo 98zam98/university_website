@@ -2,11 +2,10 @@ import React from 'react'
 import NameInTopLeft from '../components/NameInTopLeft';
 import FolderShaped from '../components/FolderShaped';
 import TwoLineHeader from '../components/TwoLineHeader';
-
-import phoneImg from "../assets/img/place_holder_50_x_50.png";
-import tabletImg from "../assets/img/place_holder_150_x_150.png";
-import desktopImg from "../assets/img/place_holder_320_x_320.png";
 import MainBtn from '../components/MainBtn';
+
+import phoneImg from "../assets/img/college_320.jpg";
+import desktopImg from "../assets/img/college_768.jpg";
 
 const HowItWorks = () => {
   return (
@@ -98,7 +97,7 @@ const HowItWorks = () => {
               className=' object-cover w-full '
               src={desktopImg}
               // this depends on the device dpr
-              srcSet={`${phoneImg} 50w, ${tabletImg} 15w, ${desktopImg} 320w`}
+              srcSet={`${phoneImg} 320w,  ${desktopImg} 768w`}
               loading='lazy'
               width={500}
               height={500}
