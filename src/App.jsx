@@ -29,6 +29,7 @@ export default function App() {
             <Ad />
           </Suspense>
         </ErrorBoundary>
+        
         <ErrorBoundary>
           <Suspense fallback={<Loading />}>
             <AboutUs />

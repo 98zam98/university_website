@@ -13,7 +13,7 @@ import desktopImg2 from "../assets/img/place_holder_1024_x_2048.png";
 
 const Ad = () => {
   return (
-    <div className=' overflow-hidden  w-screen  bg-0'>
+    <div className=' overflow-hidden  w-screen h-fit pb-96 md:pb-0 bg-0'>
       <div className=' flex items-center justify-end py-9  ' >
         <AppearingText
           isH2={true}
@@ -21,7 +21,7 @@ const Ad = () => {
         />
       </div>
 
-      <div className='container mx-auto px-2 md:px-4 grid grid-cols-1 md:grid-cols-3 gap-4 ' >
+      <div className='container mx-auto px-2 md:px-4 grid grid-cols-1 md:grid-cols-3 md:gap-4 ' >
         <div className='col-span-2 grid grid-cols-1 md:grid-cols-2  gap-4 ' >
           {
             [
@@ -51,7 +51,7 @@ const Ad = () => {
           }
         </div>
 
-        <div className=' py-9  flex justify-center  ' >
+        <div className=' py-9  flex justify-center h-full  ' >
           <FolderShaped
           borderColor={4}
           >

@@ -10,7 +10,8 @@ const PhoneMoving = ({ posFlag }) => {
     return (
         <div
             style={style}
-            className={` absolute  ${posFlag ? "top-2/5 " : " top-4/12"}   left-${posFlag ? "4/6" : "10/12"}  md:top-1/4 lg:top-1/2 md:left-${posFlag ? "1/2" : "10/12"} -translate-x-1/2 -translate-y-1/2 w-22 md:w-50 lg:w-72 `}
+            // className={` absolute  ${posFlag ? "top-2/5 " : " top-4/12"}   ${posFlag ? "left-4/6" : "left-10/12"}  md:top-1/4 lg:top-1/2 ${posFlag ? "md:left-1/2" : "md:left-10/12"} -translate-x-1/2 -translate-y-1/2 w-22 md:w-50 lg:w-72 `}
+            className={` w-22 md:w-50 lg:w-72 `}
         >
             <img
                 className={` object-cover  transform transition duration-500

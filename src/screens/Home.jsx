@@ -9,7 +9,7 @@ import PhoneMoving from '../components/PhoneMoving';
 
 const Home = () => {
   return (
-    <div className='overflow-hidden h-screen w-screen   bg-1 relative' >
+    <div className=' min-h-screen w-screen   bg-0 relative' >
 
 
       <div className='container mx-auto px-2 md:px-4' >
@@ -26,9 +26,9 @@ const Home = () => {
           />
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-5 md:grid-cols-3 gap-4">
 
-          <div className="bg-red-300 ">
+          <div className="bg-red-300 col-span-3 md:col-span-1 ">
             <div className=' '>
               <AppearingText
                 text={"   ldfnhgdfhgkhdfhs  ldfnhgdfhgkhdfhs  ldfnhgdfhgkhdfhs  ldfnhgdfhgkhdfhs  ldfnhgdfhgkhdfhs  ldfnhgdfhgkhdfhs  ldfnhgdfhgkhdfhs  ldfnhgdfhgkhdfhs  ldfnhgdfhgkhdfhs  ldfnhgdfhgkhdfhs "}
@@ -37,7 +37,8 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="  "></div>
+              
+          <div className="  flex justify-center items-center col-span-2 md:col-span-1 "><PhoneMoving posFlag={true} /></div>
 
           <nav className="bg-blue-300 h-20 hidden md:block">big screen nav</nav>
         </div>
@@ -47,7 +48,6 @@ const Home = () => {
 
 
 
-      <PhoneMoving posFlag={true} />
     </div>
   )
 }

@@ -27,7 +27,7 @@ const Explore = () => {
   return (
     <div className=' overflow-hidden  min-h-screen w-screen  bg-2 pt-52  relative '>
       <div className=' container mx-auto px-2 lg:px-4 grid grid-cols-6 gap-4 ' >
-        <div className='col-span-5 lg:col-span-1  mt-4'>
+        <div className='col-span-4 lg:col-span-1  mt-4'>
           <NameArr
             isNav={true}
             arr={navArr}
@@ -36,6 +36,7 @@ const Explore = () => {
             textColor={0}
           />
         </div>
+        <div className=" lg:hidden col-span-2 flex justify-center items-center "><PhoneMoving posFlag={false} /></div>
         <article className='col-span-6  lg:col-span-3 text-0 pb-48 ' >
           <TwoLineHeader
             line1={arr[selectedIndex][0]}
@@ -46,8 +47,8 @@ const Explore = () => {
             text={arr[selectedIndex][2]}
           />
         </article>
+        <div className=" hidden col-span-2 lg:flex justify-center items-center "><PhoneMoving posFlag={false} /></div>
       </div>
-      <PhoneMoving posFlag={false} />
     </div>
   )
 }
