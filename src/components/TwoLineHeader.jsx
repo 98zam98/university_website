@@ -1,7 +1,7 @@
 import React from 'react'
 
 const TwoLineHeader = ({ line1, line2 }) => {
-    const cls = ' text-3xl md:text-5xl  lg:text-7xl ';
+    const cls = ' text-3xl md:text-5xl  lg:text-7xl mb-3 ';
     return (
         <div className=' mb-7 md:mb-12 lg:mb-20  ' >
             <h1 className={cls} >{line1}</h1>
