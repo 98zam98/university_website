@@ -3,6 +3,7 @@ import AppearingText from '../components/AppearingText';
 import MainBtn from '../components/MainBtn';
 
 import PhoneMoving from '../components/PhoneMoving';
+import RemainingTime from '../components/RemainingTime';
 
 const navArr = [
   "🔍 SEARCH",
@@ -49,27 +50,13 @@ const Home = () => {
         <div className="flex-1 flex justify-center items-center ">
           <div className="grid grid-cols-5 md:grid-cols-3 gap-4 ">
 
-            <div className=" col-span-3 md:col-span-1 flex justify-around items-start flex-col ">
+            <div className=" col-span-3 md:col-span-1 flex justify-around items-start flex-col scale-85 ">
               <div className="text-3xl md:text-4xl">
                 <AppearingText
                   text={"Discover, apply, succeed - UVER app makes college search effortless."}
                 />
               </div>
-              <div className=' mt-4 text-primaryblack1 ' >
-                <div>⏳ Launching starts in</div>
-                <div className="grid grid-cols-8 gap-4 text-4xl lg:text-7xl text-primaryblack2   ">
-                  <div className='col-span-2'>23</div>
-                  <div className='col-span-1'>:</div>
-                  <div className='col-span-2'>22</div>
-                  <div className='col-span-1'>:</div>
-                  <div className='col-span-2'>43</div>
-                </div>
-                <div className="grid grid-cols-3 gap-4 ">
-                  <div>days</div>
-                  <div>hours</div>
-                  <div>minutes</div>
-                </div>
-              </div>
+              <RemainingTime/>
             </div>
 
 
