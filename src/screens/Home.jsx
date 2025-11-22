@@ -18,6 +18,8 @@ const Home = () => {
 
 
       <div className='container mx-auto px-2 md:px-4 h-full flex flex-col mt-1' >
+
+        {/* mobile nav */}
         <div className="md:hidden  flex justify-center items-start w-full py-6 ">
           <div className=' min-w-1/2  '
             style={{
@@ -28,7 +30,10 @@ const Home = () => {
               {
                 navArr.map((x) => {
                   return (
-                    <div className='col-span-1'>{x}</div>
+                    <div className='col-span-1
+                    active:scale-75
+                     duration-100
+                    '>{x}</div>
                   );
                 })
               }
@@ -38,7 +43,9 @@ const Home = () => {
 
         <div className=' w-full flex justify-between items-center md:mt-5  ' >
           <div
-            className='  w-12 md:w-20 lg:w-32 text-3xl md:text-4xl '
+            className='  w-12 md:w-20 lg:w-32 text-3xl md:text-4xl
+             hover:animate-ping 
+            '
           >
             UVER
           </div>
@@ -56,7 +63,7 @@ const Home = () => {
                   text={"Discover, apply, succeed - UVER app makes college search effortless."}
                 />
               </div>
-              <RemainingTime/>
+              <RemainingTime />
             </div>
 
 
@@ -68,7 +75,11 @@ const Home = () => {
                 {
                   navArr.map((x) => {
                     return (
-                      <div className='py-3'>{x}</div>
+                      <div className='p-3 rounded-full my-7
+                          active:scale-75 duration-500 active:shadow-none hover:shadow-primaryblack2 
+                           hover:shadow-2xl hover:-translate-y-0.75 hover:text-primarywhite1 hover:bg-primaryblue
+                           cursor-pointer   hover:scale-105 hover:rotate-y-20
+                      '>{x}</div>
                     );
                   })
                 }

@@ -44,9 +44,11 @@ const RemainingTime = () => {
     //   ==============================
     return (
         <div className=' mt-4 text-primaryblack1 ' >
-            <div>⏳ Launching starts in</div>
+            <div className=' animate-bounce ' >⏳ Launching starts in</div>
             <div className="text-center">
-                <div className="grid grid-cols-11 gap-4 text-5xl lg:text-8xl text-primaryblack2   ">
+                <div className="grid grid-cols-11 gap-4 text-5xl lg:text-8xl text-primaryblack2 
+                    animate-pulse  
+                ">
                     <div className='col-span-3'>{timeLeft.days}</div>
                     <div className='col-span-1'>:</div>
                     <div className='col-span-3'>{timeLeft.hours}</div>

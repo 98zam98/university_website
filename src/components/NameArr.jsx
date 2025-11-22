@@ -11,7 +11,9 @@ const NameArrInner = ({ arr, selectedIndex = 0, textColor = null, setSelectedInd
                                 setSelectedIndex(i);
                             }
                         }}
-                        className={` mb-1.5 mt-1 text-${textColor ?? "primaryblack2 "}  `}>{x}</li>);
+                        className={` mb-1.5 mt-1 text-${textColor ?? "primaryblack2 "}  
+                         hover:scale-105 duration-500 active:scale-25
+                        `}>{x}</li>);
                 })
             }
         </ul>
@@ -33,7 +35,7 @@ const NameArr = ({ arr = [], selectedIndex = 0, textColor = null, isNav = false,
                 }}
             >
                 <div
-                    className=' bg-primaryblue w-full absolute  '
+                    className=' bg-primaryblue w-full absolute duration-500  '
                     style={{
                         height: `${perc}%`,
                         top: `${selectedIndex * perc}%`,

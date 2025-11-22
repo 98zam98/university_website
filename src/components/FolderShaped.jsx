@@ -4,7 +4,11 @@ const defaultColor = "primaryblue";
 const FolderShaped = ({ children, bgColor = null, borderColor = null }) => {
     return (
         <div
-            className=" w-full  aspect-square flex flex-col "
+            className="
+                 w-full h-full  flex flex-col duration-500
+                 hover:scale-95  hover:rotate-x-10  hover:-rotate-y-5 rounded-4xl
+                 hover:-translate-y-5 
+            "
         >
             <div className={` w-1/3  bg-${borderColor ?? defaultColor} rounded-2xl aspect-square `}
                 style={{

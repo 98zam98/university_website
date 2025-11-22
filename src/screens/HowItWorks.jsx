@@ -31,7 +31,7 @@ const HowItWorks = () => {
         <div
           className='  w-full flex justify-end   items-start  '
         >
-          <div className=' scale-200 w-fit h-fit pr-3 md:pr-0 ' >
+          <div className=' scale-200 w-fit h-fit pr-3 md:pr-0  hover:scale-250 duration-500  ' >
             🎓
           </div>
         </div>
@@ -81,10 +81,10 @@ const HowItWorks = () => {
               className=' flex items-center justify-center  '
             >
               <FolderShaped
-                borderColor={4}
+                borderColor={"primaryblue"}
               >
                 <div className=' p-8 ' >
-                  <div className=' scale-200 w-fit h-fit ' >
+                  <div className=' scale-200 w-fit h-fit  hover:scale-250 duration-500  ' >
                     {x.icon}
                   </div>
                   <h1 className=' mb-5 mt-12 text-3xl md:text-5xl ' >
@@ -101,10 +101,12 @@ const HowItWorks = () => {
           })
         }
         <div
-          className=' flex items-center justify-center relative rounded-4xl overflow-clip '
+          className=' group flex items-center justify-center relative rounded-4xl overflow-clip  duration-500
+                 hover:scale-102  hover:rotate-x-10  hover:-rotate-y-5 '
         >
           <div
-            className='   flex justify-end   items-start  overflow-hidden    '
+            className='   flex justify-end   items-start  overflow-hidden  h-full duration-800
+                 group-hover:scale-110  '
           >
             <img
               className=' object-cover w-full '

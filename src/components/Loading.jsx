@@ -4,7 +4,9 @@ import React from 'react'
 
 const Loading = () => {
   return (
-    <div>Loading</div>
+    <div
+    className=' h-screen w-screen animate-pulse bg-primaryblue '
+    ></div>
   );
 }
 

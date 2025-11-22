@@ -2,12 +2,13 @@ import React from 'react'
 
 const MainBtn = ({ text = "" }) => {
     return (
-        <button className=" active:scale-95 transition-transform
-            px-6 py-2 bg-primaryblue hover:bg-primaryblue/80  active:bg-primaryblue/20 text-white rounded-full 
-            hover:-translate-y-1 hover:shadow-lg  duration-200 
+        <button className="    cursor-pointer
+            px-6 py-2 bg-primaryblue   active:bg-primaryblue/20 active:scale-75 text-white rounded-full 
+            hover:-translate-y-1   duration-100 
             hover:scale-105
             hover:-rotate-3
-            hover:rotate-y-30
+            hover:rotate-y-10
+            hover:shadow-2xl hover:shadow-primaryblack2 active:shadow-none
  
         ">
             {text}

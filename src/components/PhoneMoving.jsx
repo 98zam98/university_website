@@ -14,7 +14,9 @@ const PhoneMoving = ({ posFlag }) => {
         >
             <img
                 className={` object-cover  transform transition duration-500
-              hover:rotate-x-12 hover:rotate-y-12 ${posFlag ? "" : "rotate-y-30 rotate-x-6"}   `}
+                    hover:rotate-x-12 hover:rotate-y-12 ${posFlag ? "" : "rotate-y-30 rotate-x-6"}   
+                     hover:scale-105 
+              `}
                 src={desktopImg}
                 // this depends on the device dpr
                 srcSet={`${phoneImg} 320w, ${tabletImg} 768w, ${desktopImg} 1024w`}

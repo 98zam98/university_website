@@ -46,7 +46,8 @@ const Ad = () => {
                     className='  w-full py-9    flex justify-center   items-center   '
                   >
                     <img
-                      className=' object-cover  w-full  aspect-square flex flex-col rounded-4xl  '
+                      className=' object-cover  w-full  aspect-square flex flex-col rounded-4xl  duration-500
+                 hover:scale-102  hover:rotate-x-10  hover:-rotate-y-5  '
                       src={x.desktopImg}
                       // this depends on the device dpr
                       srcSet={`${x.phoneImg} 320w,, ${x.desktopImg}  1024w`}
@@ -63,7 +64,7 @@ const Ad = () => {
 
           <div className=' py-9  flex justify-center h-full  ' >
             <FolderShaped
-              borderColor={4}
+              borderColor={"primaryblue"}
             >
               <div className=' flex justify-between flex-col h-full w-full relative ' >
                 <div
@@ -81,10 +82,10 @@ const Ad = () => {
 
                 </div>
                 <div className=' flex justify-between flex-col h-full p-4 absolute ml-5 ' >
-                  <div className='  scale-200 w-fit h-fit p-6 ' >👩‍🎓</div>
+                  <div className='  scale-200 w-fit h-fit p-6 hover:scale-250 duration-500 ' >👩‍🎓</div>
                   <div>
                     <div className=' text-primarywhite1 text-4xl  md:text-6xl  ' >Get ready to experience the future of college applications with UVER</div>
-                    <div className=' my-7' >
+                    <div className=' my-7 animate-bounce  ' >
                       <ArrowBtn />
                     </div>
                   </div>
