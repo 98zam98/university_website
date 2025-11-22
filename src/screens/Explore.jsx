@@ -37,7 +37,7 @@ const Explore = () => {
           />
         </div>
         <div className=" lg:hidden col-span-2 flex justify-center items-center "><PhoneMoving posFlag={false} /></div>
-        <article className='col-span-6  lg:col-span-3 text-primarywhite1  px-5 md:px-2 ' >
+        <article className='col-span-6  lg:col-span-3 text-primarywhite1  px-5 md:px-2 mb-20 ' >
           <TwoLineHeader
             line1={arr[selectedIndex][0]}
             line2={arr[selectedIndex][1]}
