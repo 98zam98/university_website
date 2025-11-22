@@ -11,7 +11,7 @@ const NameArrInner = ({ arr, selectedIndex = 0, textColor = null, setSelectedInd
                                 setSelectedIndex(i);
                             }
                         }}
-                        className={` mb-1.5 mt-1 text-${textColor ?? 3}  `}>{x}</li>);
+                        className={` mb-1.5 mt-1 text-${textColor ?? "primaryblack2 "}  `}>{x}</li>);
                 })
             }
         </ul>
@@ -33,7 +33,7 @@ const NameArr = ({ arr = [], selectedIndex = 0, textColor = null, isNav = false,
                 }}
             >
                 <div
-                    className=' bg-4 w-full absolute  '
+                    className=' bg-primaryblue w-full absolute  '
                     style={{
                         height: `${perc}%`,
                         top: `${selectedIndex * perc}%`,

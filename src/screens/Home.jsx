@@ -4,23 +4,33 @@ import MainBtn from '../components/MainBtn';
 
 import PhoneMoving from '../components/PhoneMoving';
 
+const navArr = [
+  "🔍 SEARCH",
+  "💬 CHAT",
+  "📝 APPLY",
+  "👀 TRACK",
+];
+
 const Home = () => {
   return (
-    <div className=' w-screen   bg-0 h-screen' >
+    <div className=' w-screen   bg-primarywhite1 h-screen' >
 
 
       <div className='container mx-auto px-2 md:px-4 h-full flex flex-col mt-1' >
         <div className="md:hidden  flex justify-center items-start w-full py-6 ">
           <div className=' min-w-1/2  '
-          style={{
-            fontSize:"0.75rem"
-          }}
+            style={{
+              fontSize: "0.75rem"
+            }}
           >
             <nav className=' grid grid-cols-4 gap-4 ' >
-              <div className='col-span-1'>🔍 SEARCH</div>
-              <div className='col-span-1'>💬 CHAT</div>
-              <div className='col-span-1'>📝 APPLY</div>
-              <div className='col-span-1'>👀 TRACK</div>
+              {
+                navArr.map((x) => {
+                  return (
+                    <div className='col-span-1'>{x}</div>
+                  );
+                })
+              }
             </nav>
           </div>
         </div>
@@ -45,9 +55,9 @@ const Home = () => {
                   text={"Discover, apply, succeed - UVER app makes college search effortless."}
                 />
               </div>
-              <div className=' mt-4 text-2 ' >
+              <div className=' mt-4 text-primaryblack1 ' >
                 <div>⏳ Launching starts in</div>
-                <div className="grid grid-cols-8 gap-4 text-4xl lg:text-7xl text-3   ">
+                <div className="grid grid-cols-8 gap-4 text-4xl lg:text-7xl text-primaryblack2   ">
                   <div className='col-span-2'>23</div>
                   <div className='col-span-1'>:</div>
                   <div className='col-span-2'>22</div>
@@ -68,10 +78,13 @@ const Home = () => {
             <div className=" col-span-3 md:col-span-1 flex justify-around items-center flex-col ">
               <div></div>
               <nav className=" hidden md:block  ">
-                <div className='py-3' >🔍 SEARCH</div>
-                <div className='py-3' >💬 CHAT</div>
-                <div className='py-3' >📝 APPLY</div>
-                <div className='py-3' >👀 TRACK</div>
+                {
+                  navArr.map((x) => {
+                    return (
+                      <div className='py-3'>{x}</div>
+                    );
+                  })
+                }
               </nav>
             </div>
           </div> </div>

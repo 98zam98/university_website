@@ -10,7 +10,7 @@ import meetingVideo from "../assets/vid/meet.mp4";
 
 const AboutUs = () => {
   return (
-    <div className=' overflow-hidden h-screen  w-screen bg-1 relative'>
+    <div className=' overflow-hidden h-screen  w-screen bg-primarywhite2 relative'>
 
       {/* Background video */}
       <video
@@ -27,7 +27,7 @@ const AboutUs = () => {
       <div className=" absolute z-10 top-0 left-0  flex items-center justify-center h-full w-full bg-black/70">
 
 
-        <div className='container mx-auto px-2 md:px-4 grid grid-cols-1 md:grid-cols-3 gap-4  text-0 ' >
+        <div className='container mx-auto px-2 md:px-4 grid grid-cols-1 md:grid-cols-3 gap-4  text-primarywhite1 ' >
           <div>
             <NameInTopLeft
               text={"About Us"}

@@ -12,7 +12,7 @@ const line1 = "Simple Steps To";
 const line2 = "College Success";
 const HowItWorks = () => {
   return (
-    <div className=' py-9  w-screen  bg-1'>
+    <div className=' py-9  w-screen  bg-primarywhite2'>
       <div className='  container mx-auto px-2 md:px-4 grid grid-cols-2 md:grid-cols-6 gap-4  pb-9 ' >
 
         <div className=' flex items-start justify-start  ' >
@@ -45,7 +45,7 @@ const HowItWorks = () => {
         />
       </div>
 
-      <div className=' container mx-auto px-2 md:px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-0 ' >
+      <div className=' container mx-auto px-2 md:px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-primarywhite1 ' >
         {
           //  icon , header , paragraph 
           [
@@ -116,8 +116,8 @@ const HowItWorks = () => {
               height={500}
             />
           </div>
-          <div className=' w-full absolute px-8 h-full bg-3/30 flex  justify-center items-start flex-col ' >
-            <p className=' text-0 text-3xl md:text-5xl py-15 md:py-20 ' >Discover, apply, succeed - UVER app makes college search effortless.</p>
+          <div className=' w-full absolute px-8 h-full bg-primaryblack2/30 flex  justify-center items-start flex-col ' >
+            <p className=' text-primarywhite1 text-3xl md:text-5xl py-15 md:py-20 ' >Discover, apply, succeed - UVER app makes college search effortless.</p>
             <MainBtn
               text={"Get Early Access 📱"}
             />

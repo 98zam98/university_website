@@ -20,7 +20,7 @@ import desktopImgz from "../assets/img/graduate_1024.jpg";
 
 const Ad = () => {
   return (
-    <div className='    w-screen h-fit pb-96 md:pb-0 bg-0 flex justify-center items-center '>
+    <div className='    w-screen h-fit pb-96 md:pb-0 bg-primarywhite1 flex justify-center items-center '>
       <div className="container">
         <div className='  flex items-center justify-end py-9' >
           <div className=' text-2xl md:text-5xl indent-20 md:indent-50 w-10/12  ' >
@@ -83,7 +83,7 @@ const Ad = () => {
                 <div className=' flex justify-between flex-col h-full p-4 absolute ml-5 ' >
                   <div className='  scale-200 w-fit h-fit p-6 ' >👩‍🎓</div>
                   <div>
-                    <div className=' text-0 text-4xl  md:text-6xl  ' >Get ready to experience the future of college applications with UVER</div>
+                    <div className=' text-primarywhite1 text-4xl  md:text-6xl  ' >Get ready to experience the future of college applications with UVER</div>
                     <div className=' my-7' >
                       <ArrowBtn />
                     </div>

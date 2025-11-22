@@ -1,6 +1,6 @@
 import React from 'react'
 
-const defaultColor = "4";
+const defaultColor = "primaryblue";
 const FolderShaped = ({ children, bgColor = null, borderColor = null }) => {
     return (
         <div
@@ -12,7 +12,7 @@ const FolderShaped = ({ children, bgColor = null, borderColor = null }) => {
                 }}
             ></div>
             <div
-                className={` bg-cover bg-center rounded-4xl bg-${defaultColor}  bg-${bgColor ?? (borderColor ?? defaultColor)}  w-full flex-1 border-blue-500  ${borderColor ? ` border-${borderColor}    border-6 ` : ""}  `}
+                className={` bg-cover bg-center rounded-4xl bg-${defaultColor}  bg-${bgColor ?? (borderColor ?? defaultColor)}  w-full flex-1 border-primaryblue  ${borderColor ? ` border-${borderColor}    border-6 ` : ""}  `}
             >
                 {children}
             </div>

@@ -10,12 +10,11 @@ const PhoneMoving = ({ posFlag }) => {
     return (
         <div
             style={style}
-            // className={` absolute  ${posFlag ? "top-2/5 " : " top-4/12"}   ${posFlag ? "left-4/6" : "left-10/12"}  md:top-1/4 lg:top-1/2 ${posFlag ? "md:left-1/2" : "md:left-10/12"} -translate-x-1/2 -translate-y-1/2 w-22 md:w-50 lg:w-72 `}
             className={` w-22 md:w-50 lg:w-72 `}
         >
             <img
                 className={` object-cover  transform transition duration-500
-              hover:rotate-x-12 hover:rotate-y-12 ${posFlag ? "" : "rotate-y-45 rotate-x-6"}   `}
+              hover:rotate-x-12 hover:rotate-y-12 ${posFlag ? "" : "rotate-y-30 rotate-x-6"}   `}
                 src={desktopImg}
                 // this depends on the device dpr
                 srcSet={`${phoneImg} 320w, ${tabletImg} 768w, ${desktopImg} 1024w`}
