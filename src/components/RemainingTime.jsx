@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 const sec = 1000;
-const thou60 = sec * 60;
-const thou6060 = thou60 * 60;
-const thou606024 = thou6060 * 24;
+const min = sec * 60;
 
 const RemainingTime = () => {
     const [timeLeft, setTimeLeft] = useState({
@@ -18,24 +16,28 @@ const RemainingTime = () => {
 
         const updateCountdown = () => {
             const now = new Date();
-            const diff = targetDate - now;
+            const diff = (targetDate - now) / sec;
 
             if (diff <= 0) {
                 setTimeLeft({ days: 0, hours: 0, minutes: 0 });
                 return;
             }
 
-            const days = Math.floor(diff / (thou606024));
-            const hours = Math.floor((diff / (thou6060)) % 24);
-            const minutes = Math.floor((diff / (thou60)) % 60);
-            // const minutes = Math.floor((diff / (thou60)));
+            // 6o s in m
+            const dm = diff / (60);
+            const minutes = Math.floor((dm) % 60);
+            // 60 m in h
+            const dh = dm / (60)
+            const hours = Math.floor((dh) % 24);
+            // 24 h in day
+            const days = Math.floor(dh / (24));
 
             setTimeLeft({ days, hours, minutes });
         };
 
         updateCountdown();
-        const interval = setInterval(updateCountdown, thou60); // updates every minute
-        // const interval = setInterval(updateCountdown, 100); // updates every minute
+        // updates every minute
+        const interval = setInterval(updateCountdown, min);
         return () => clearInterval(interval);
     }, []);
 
